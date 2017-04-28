@@ -1,0 +1,260 @@
+/*
+  Theme Name: Kelsie Wolfley Photograpgy
+  Theme URL: http://kelsiewolfleyphotography.com/kelsiewolfleyphotography
+  Author: Noah Tippetts
+  Author URL: https://nbtippetts.github.io/My-Portfolio/#/home/contact
+*/
+html,body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
+
+
+
+.home-product {
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  min-height: 100vh;
+  background-image: url("img/madison(3).jpg");
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   -webkit-background-size: cover;
+   background-size: cover;
+}
+
+#home-product-small {
+  display: none;
+}
+
+.the-navbar {
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.small-navbar {
+  display: none;
+}
+
+.info {
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  position: fixed;
+  opacity: 0.9;
+  border-radius: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.info li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info li a {
+  text-decoration: none;
+}
+
+.info li a h3 {
+  color: #999999;
+  margin: 12px;
+  font-size: xx-large;
+}
+
+.info li a h3:hover {
+  color: #4C4C4C;
+}
+
+
+.logo-text {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    justify-content: center;
+    position: absolute;
+    align-items: flex-end;
+}
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+}
+
+.project-container-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-container-list li {
+  list-style: none;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img.img-hovers {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+span.madison-hovers {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.madison-hovers:hover {
+  background-color: black;
+  opacity: 0.6;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+span.madison-hovers p {
+  position: relative;
+  height: 400px;
+  opacity: 0;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+span.madison-hovers p:hover {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  opacity: 1;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.hamburger{
+  background: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 45px;
+  padding: 15px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.cross{
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 6em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:70%; width: -moz-available; width: -webkit-fill-available; background:#333;  position:absolute; top: 0; right: 0; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (max-device-width: 768px) {
+  .info {
+    display: none;
+  }
+  .small-navbar {
+    margin: 0;
+    height: 0;
+    display: block;
+    background-color: transparent;
+  }
+  .home-product {
+    background-image: none;
+    width: 100%;
+  }
+  .logo-text {
+    display: none;
+  }
+
+  #home-product-small {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+  }
+  span.madison-hovers:hover {
+    display: none;
+  }
+  span.madison-hovers p {
+    display: none;
+  }
+
+  span.madison-hovers p:hover {
+    display: none;
+  }
+  .project-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
