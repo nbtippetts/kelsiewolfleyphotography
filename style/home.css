@@ -19,7 +19,7 @@ html,body {
   width: -moz-available;
   width: -webkit-fill-available;
   min-height: 100vh;
-  background-image: url("./img/madison(3).jpg");
+  background-image: url("../img/madison(3).jpg");
   overflow: hidden;
   background-attachment: fixed;
   background-repeat: no-repeat;
