@@ -6,11 +6,24 @@ app.directive('navsBarDir', function($window) {
       games: '='
     },
     link: function(scope, elem, attrs) {
-    $(".img-hovers").on('mouseenter', function() {
-       $(".img-hovers").css("background-color", "black", "opacity", "0.6")
-       $(".img-hovers").css("color", "white")
-    })
+      var menu = $('.menu').hide();
+      var hamburger = $('.hamburger');
+      var cross = $('.cross').hide();
 
+      $(hamburger).click(function() {
+        $(menu).slideToggle('slow', function() {
+          hamburger.hide();
+          menu.show();
+          cross.show();
+        });
+      });
+      $(cross).click( function() {
+        $(menu).slideToggle('slow', function() {
+          hamburger.show();
+          menu.hide();
+          cross.hide();
+        });
+      });
     }
   }
 })
